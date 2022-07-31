@@ -27,8 +27,9 @@ export default function Page({ data }: PageProps<User | null>) {
 
   return (
     <div>
-      <img src={data.avatar_url} width={64} height={64} />
+      <h1>GitHub Username Getter</h1>
       <h1>{data.name}</h1>
+      <img src={data.avatar_url} width={64} height={64} />
       <p>{data.login}</p>
     </div>
   );
